@@ -386,13 +386,31 @@ length2 = int(round(len(lenpub1)/len(df["title"]),0))
 print(length)
 print(length2)
 def name(N):
+    list = []
     for i in range(N):
+        k = i + 1
         first = [*random.sample(set(firstname), 1)]
         last = [*random.sample(set(lastname), 1)]
         book = [*random.sample(set(lenbook1), length)]
         publisher = [*random.sample(set(lenpub), 1)]
-        print("Your name should be " + str(first[0]) + " " + str(last[0]) + " " + 
-              "and you are author of " + str(book[0]) + " " + str(book[1]) + " "
-              + str(book[2]) + ". " + 
-              "This book was published by " + str(publisher[0]) + ".")
+        tup = [str(k)," Your name should be " , str(first[0]) , " " , str(last[0]) , " " , 
+              "and you are author of " , str(book[0]) , " " , str(book[1]) , " "
+              , str(book[2]) , ". " , 
+              "This book was published by " , str(publisher[0]) , "."," ","\n"]
+        print(tup)
+        list.extend(tup)
+    print(list)
+#    file = open('dreams.txt', 'w')
+
+#    for item in list:
+#        file.write("%s\n" % item)
+    b = ''.join(list)
+    print(b)
+#    file.write(b)
+#    file.close()
+    np.savetxt('dreams.txt', [b], fmt='%s')
 name(10)
+check = open('dreams.txt', 'r', encoding='UTF-8')
+dreams = check.read()
+print(dreams)
+check.close()
