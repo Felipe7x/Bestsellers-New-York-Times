@@ -1,5 +1,5 @@
 ## What does project do? 
-This project allow you to generate new names of books and authors. Also create plot:
+This project allow you to generate new names of books and authors . Also create plot:
 
 ![Plot](https://thumbs.gfycat.com/TenseSourKitfox-size_restricted.gif)
 
@@ -13,7 +13,7 @@ Just one book could hold on top for more than 100 weeks! And this book is a "The
 
 The largest number of bestsellers were published in the publishing house Grand Central and so on!
 
-Plots and generator based on New York Times bestsellers dataset. Dataset available to review and download [here](https://data.world/) or check `books_uniq_weeks.csv` in repo. 
+Plots and generator based on New York Times bestsellers dataset (from 2011 to 2018 year, not all the time!). Dataset available to review and download [here](https://data.world/) or check `books_uniq_weeks.csv` in repo. 
 ## How is it set up? 
 To run this repo you should have:
 ```
