@@ -24,7 +24,7 @@ plotly
 ```
 1. Download repo:
 ```
-wget https://github.com/Oysiyl/Bestsellers-New-York-Times.git
+git clone https://github.com/Oysiyl/Bestsellers-New-York-Times.git
 ```
 2. Go to folder:
 ```
@@ -32,14 +32,10 @@ cd Bestsellers-New-York-Times
 ```
 3. Install dependencies:
 ```
-pip3 -r requirements.txt
+pip3 install -r requirements
 ```
 ## How is it used? 
-After that you can simply run `bestseller.py` from your favorite IDE or terminal:
-```
-pip3 bestseller.py
-```
-Thats create a newest version of `dreams.txt` in scripts folder and updated plots. For now you can open this file and have some fun, exploring what generator generate!
+After that you can simply run `bestseller.py` from your favorite IDE. Thats create a newest version of `dreams.txt` in scripts folder and updated plots. For now you can open this file and have some fun, exploring what generator generate!
 Also script create `dreams.txt`, which contains random generated data.
 Such this:
 ```
